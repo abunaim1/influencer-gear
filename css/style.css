@@ -1,0 +1,111 @@
+/* common styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+body {
+  background: whitesmoke;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  margin-bottom: 140px;
+}
+/* Banner section style */
+.banner {
+  display: flex;
+  padding-left: 250px;
+  padding-right: 200px;
+  gap: 150px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.banner-title {
+  font-weight: 700;
+  font-size: 52px;
+  color: #3a3a3a;
+  margin: 0;
+}
+.banner-description {
+  font-weight: 600;
+  font-size: 16px;
+  color: #3a3a3a;
+  margin-bottom: 30px;
+}
+.preebook {
+  background: #e02c6d;
+  border-radius: 41px;
+  border: 0px;
+  width: 196px;
+  height: 44px;
+  color: #ffffff;
+  font-size: 19px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  align-content: center;
+}
+/* Ecommerce-shop styles */
+.ecommerce {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+/* Popular Items section */
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title-popular {
+  font-size: 33px;
+  color: #3a3a3a;
+}
+.popular-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+}
+.item {
+  border-radius: 7px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-right: 13px;
+  padding-left: 14px;
+  padding-bottom: 5px;
+  height: min-content;
+}
+.item-description {
+  line-height: 16px;
+}
+.product-title {
+  color: #18191f;
+  font-size: 26px;
+  font-weight: 400;
+}
+.dollar {
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.rating i {
+  color: #fb8200;
+}
+.product-details {
+  color: #787885;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "Inter";
+}
