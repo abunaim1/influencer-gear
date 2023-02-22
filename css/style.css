@@ -109,3 +109,60 @@ section {
   font-weight: 700;
   font-family: "Inter";
 }
+.see-more {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 920px;
+}
+.see-more a {
+  text-decoration: none;
+}
+/*................................ 
+    Responsive for mobile view
+................................. */
+@media screen and (max-width: 576px) {
+  section {
+    margin-bottom: 70px;
+  }
+  .banner {
+    padding-left: 0px;
+    padding-right: 0px;
+    gap: 0px;
+    flex-direction: column-reverse;
+  }
+  .banner-title {
+    font-weight: 600;
+    font-size: 35px;
+  }
+  .banner-image {
+    display: none;
+  }
+  .banner-text {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .banner-description {
+    font-weight: 100;
+    font-size: 15px;
+  }
+  .ecommerce {
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 0;
+  }
+  .popular-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .see-more {
+    display: none;
+  }
+}
+.hide {
+  display: none;
+}
