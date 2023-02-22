@@ -8,6 +8,27 @@ body {
 section {
   margin-bottom: 140px;
 }
+/* Navigation style */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 250px;
+  padding-right: 150px;
+}
+.logo-text {
+  font-size: 24px;
+  color: #3a3a3a;
+  font-weight: 700;
+}
+.nav-part {
+  display: flex;
+  align-items: center;
+}
+.nav-part a {
+  text-decoration: none;
+  color: #3a3a3a;
+  padding-right: 40px;
+}
 /* Banner section style */
 .banner {
   display: flex;
@@ -120,6 +141,7 @@ section {
 .see-more a {
   text-decoration: none;
 }
+/* Feature Section Styles */
 .feature {
   display: flex;
   align-items: center;
@@ -151,6 +173,7 @@ section {
   justify-content: center;
   gap: 10px;
 }
+/* Footer Section Styles */
 footer {
   height: 239px;
   width: 100%;
@@ -163,7 +186,6 @@ footer {
 .footer-title {
   color: #ffffff;
   font-size: 25px;
-  
 }
 .copy-right-msg {
   color: #d9dbe1;
@@ -180,6 +202,28 @@ footer {
 @media screen and (max-width: 576px) {
   section {
     margin-bottom: 70px;
+  }
+  nav {
+    padding: 0;
+    margin-bottom: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav {
+    margin-bottom: 20px;
+  }
+  .logo-text p {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-part a {
+    padding-right: 0px;
+  }
+  .nav-part p {
+    display: inline;
+    padding-right: 14px;
   }
   .banner {
     padding-left: 0px;
@@ -231,7 +275,4 @@ footer {
     margin-bottom: 30px;
     text-align: center;
   }
-}
-.hide {
-  display: none;
 }
