@@ -1,6 +1,7 @@
 /* common styles */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 body {
+  margin: 0;
   background: whitesmoke;
   font-family: "Poppins", sans-serif;
 }
@@ -119,6 +120,60 @@ section {
 .see-more a {
   text-decoration: none;
 }
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+.feature-description .feature-title {
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0;
+}
+.feature-description .description {
+  text-align: justify;
+  font-size: 16px;
+  color: #6c6c6c;
+  font-weight: 600;
+}
+.join-now-btn {
+  background: #e02c6d;
+  width: 155px;
+  height: 44px;
+  color: #ffffff;
+  font-size: 17px;
+  border: 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+footer {
+  height: 239px;
+  width: 100%;
+  background: #0a0826;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-title {
+  color: #ffffff;
+  font-size: 25px;
+  
+}
+.copy-right-msg {
+  color: #d9dbe1;
+  font-size: 13px;
+}
+.social-icon a {
+  color: #ffffff;
+  text-decoration: none;
+  padding-right: 20px;
+}
 /*................................ 
     Responsive for mobile view
 ................................. */
@@ -161,6 +216,20 @@ section {
   }
   .see-more {
     display: none;
+  }
+  .feature {
+    gap: 0px;
+    flex-direction: column-reverse;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .feature-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin-bottom: 30px;
+    text-align: center;
   }
 }
 .hide {
